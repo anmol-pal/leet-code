@@ -1,3 +1,5 @@
+package leetcode;
+
 //https://leetcode.com/problems/longest-common-prefix/
 public class LongestCommonPrefix {
     public static void main(String[] args) {
