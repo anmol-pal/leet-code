@@ -6,12 +6,19 @@ import java.util.Map;
 //https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
 class CountIndex{
     int count, index;
+
+    public int getCount() {
+        return count;
+    }
+    public int getIndex(){
+        return index;
+    }
     public CountIndex(int index){
         this.count= 1;
         this.index=index;
     }
-    public CountIndex(){
-        this.count++;
+    public void index(){
+        count++;
     }
 }
 public class NonRepeatingChar {
@@ -28,7 +35,8 @@ public class NonRepeatingChar {
         System.out.println(map);
         for(int i=0; i<s.length()-1;i++){
             if(map.containsKey(s.charAt(i))){
-                    map.put(s.charAt(i),map.get(s.charAt(i)).count);
+                System.out.println("Here "+map.get(s.charAt(i)));
+                    map.put(s.charAt(i),map.get(s.charAt(i)).index(););
             }
             else{
                 map.put(s.charAt(i),new CountIndex(i));
